@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root{
+    --primary-color:crimson;
+    --secondary-color:#2c2c2c;
+    --white:#fff;
+    --bg-color:#eae9e9;
+}
+/* ! HEADER KISMI */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logo img{
+    max-width: 130px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+
+}
+.nav-menu a{
+    text-decoration: none;
+    color:var(--secondary-color);
+    font-size: 17px;
+}
+.nav-menu a:hover{
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    color: #2c2c2c;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.nav-icon i:hover{
+    color: var(--primary-color);
+    transition: .5s;
+}
+/* ! HEADER KISMI */
+
+
+
+
+/* !  MAİN KISMI */
+
+section{
+
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background:url(./images/banner-3.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-text{
+    padding-left: 30px;
+
+}
+.main-text h5{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.main-text h1{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.main-text p{
+    color: rgb(55, 55, 55);
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: var(--secondary-color);
+    border: 2px solid black;
+    padding: 15px;
+    text-decoration: none;
+}
+.main-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transition: .5s;
+}
+.main-btn i{
+    margin-left: 5px;
+}
+
+/* !  MAİN KISMI */
+
+
+/* ? PRODUCTS */
+
+
+.center-text h2{
+        text-align: center;
+        margin: 15px;
+}
+.center-text span{
+    color: var(--primary-color);
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+  gap: 20px ;
+  
+}
+
+.row{
+    position: relative;
+}
+
+
+.row img{
+    width: 100%;
+    height: auto;
+}
+.row img:hover{
+    scale: 0.95;
+    transition: .5s;
+    cursor: pointer;
+}
+.product-text h5{
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: auto;
+    padding:3px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+.heart-icon{
+    position: absolute;
+    right:0;
+    font-size: 20px;
+}
+
+.heart-icon:hover{
+    color: var(--primary-color);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.rating i{
+    color: orange;
+    font-size: 20px;
+}
+
+.price h4{
+    color: gray;
+    font-size: 20px;
+}
+.price p{
+    color: green;
+    font-size: bold ;
+}
+/* ? PRODUCTS */
+
+
+/* ! CLIENT */
+
+.client-review{
+    background-color:var(--bg-color);
+    margin-top: 30px;
+}
+.reviews{
+    text-align: center;
+}
+.reviews img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews h3{
+    font-size: 25px;
+    text-align: center;
+}
+.reviews p{
+    font-style: italic;
+    color: #707070;
+}
+/* ! CLIENT */
+
+.up-center-text{
+    text-align: center;
+    margin: 25px;
+    margin: 30px;
+}
+.cart img{
+  width: 380px;
+  border-radius: 10px;
+}
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px,auto));
+    gap: 20px;
+    text-align: center;
+}
+.cart h4{
+    color: var(--secondary-color);
+}
+.cart p{
+    color: gray;
+    margin: 10px;
+}
+
+/* ? YUKARI OK YÖNLENDİRME */
+
+.top-arrow{
+    text-align: center;
+    margin: 40px;
+   
+}
+.top i{
+    font-size: 20px;
+    color:var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+.top i:hover{
+    color: var(--primary-color);
+    border: 1px solid crimson;
+    transition: .5s;
+    scale: 0.95;
+}
+/* ? YUKARI OK YÖNLENDİRME */
+
+
+/* ! LOCATION */
+.location{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+.location p {
+    color:var(--secondary-color);
+    font-style:italic;
+}
+/* ! LOCATION */
+
+
+/* contact */
+
+.contact{
+    background-color: var(--bg-color);
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    margin-top: 20px;
+
+}
+
+.first-info, .second-info, .third-info{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.first-info a , .second-info a, .third-info a{
+    text-decoration: none;
+    color: gray;
+    margin: 5px;
+}
+
+.first-info a:hover, .second-info a:hover, .third-info a:hover{
+    color: var(--primary-color);
+}
+
+.social-icon{
+    background-color: #2c2c2c;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+   
+    
+}
+.social-icon i{
+    color: var(--bg-color);
+}
+.social-icon i:hover{
+    color: var(--primary-color);
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-text{
+        font-size: 40px;
+        transition: .5s;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        
+    }
+}
+@media(max-width:600px){
+    .nav-menu{
+        position:absolute;
+        right: 0;
+        height: 150vh;
+        width: 100px;
+        background-color: var(--white);
+        margin-top: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 30px;
+       transition: .5s;
+       opacity: 0.7;
+    }
+}
